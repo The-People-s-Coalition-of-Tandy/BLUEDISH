@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css">
+    <title>PCoT Linx Tree</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/The-People-s-Coalition-of-Tandy/PCoTandy/main/Assets/PCoTandyLogo.ico">
+</head>
+
+<body>
+    <main>
+        <!-- <img src="../Assets/TandyIconSpiro200x200.png" alt="People's Coalition of Tandy Logo"
+            class="pcot-logo"><br> -->
+            <a href="https://pcotandy.org" target="_blank"><img id="speaker" src="./Assets/speakerSTILL.gif" alt="People's Coalition of Tandy Logo"
+            class="pcot-logo" onmouseover="hover();" onmouseout="unhover();"></a>
+            <br>
+
+        <header>
+            <p>
+                Welcome to the 
+                <br>
+                <!-- <span class="release-name"><a href="https://pcotandy.org" target="_blank">People's Coalition of Tandy</a></span><br><br> -->
+                <a href="https://tandy.bandcamp.com/album/into-the-blue" target="_blank">BLUE DISH "INTO THE BLUE"</a>
+                <br>
+                Links Site!
+            </p>
+        </header>
+        <div class="links">
+            <a href="https://tandy.bandcamp.com/album/into-the-blue" class="link" target="_blank" onmouseover="hover();" onmouseout="unhover();">
+                Bandcamp
+            </a>
+            <a href="https://pcotandy.org" class="link" target="_blank" onmouseover="hover();" onmouseout="unhover();">
+                Blamscamp
+            </a">
+            <a href="https://www.pcotandy.org/EV1/" class="link" target="_blank" onmouseover="hover();" onmouseout="unhover();">
+                Spotify
+            </a>
+            <a href="https://www.pcotandy.org/LandsEnd/" class="link" target="_blank" onmouseover="hover();" onmouseout="unhover();">
+                Apple Music
+            </a>
+            <a href="https://www.pcotandy.org/LandsEnd/" class="link" target="_blank" onmouseover="hover();" onmouseout="unhover();">
+                People's Coalition of Tandy (Label)
+            </a>
+        </div>
+        <footer>
+            <section>
+                <img class="explosion" src="../Assets/elieExplosionIcon.gif" alt="Gif of pixel fireworks">
+                <a href="https://www.pcotandy.org" target="_blank"> <img class="tandyLinx" src="../Assets/tandyLinx1.png"
+                        alt="Tandy Linx logo"></a>
+                <img class="explosion" src="../Assets/elieExplosionIcon.gif" alt="Gif of pixel fireworks">
+            </section>
+        </footer>
+    </main>
+</body>
+
+<script>
+function hover() {
+    const speaker = document.getElementById('speaker');
+    speaker.setAttribute('src', './Assets/speaker.gif');
+}
+
+function unhover() {
+    const speaker = document.getElementById('speaker');
+     speaker.setAttribute('src', './Assets/speakerSTILL.gif');
+}
+</script>
+
+</html>
