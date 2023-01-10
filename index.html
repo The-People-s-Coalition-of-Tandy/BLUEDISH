@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
+<head>    
+  <link rel="icon" href="https://raw.githubusercontent.com/The-People-s-Coalition-of-Tandy/PCoTandy/main/Assets/PCoTandyLogo.ico">
+
+
+
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js">
+
+</head>
+<script 
+type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js">
 </script>
 
-<script>
 
-</script>
 
 <style media="screen">
   body {
     background-color: rgb(0, 0, 0);
+    /* background-image: url("./tex/7.png"); */
   }
 
   .shaderContainer {
@@ -117,13 +124,22 @@
             position:relative;
 
     }
-    aside{
-      background-color: whitesmoke;
-      /* top: 350px; */
-      width: fit-content;
 
+    aside{
+      /* top: 350px; */
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      width: fit-content;
     }
 
+    button{
+      background-color: whitesmoke;
+      border-radius: 20%;
+    }
+
+    span.clickMe{
+      color: yellow;
+    }
 
   
     @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
@@ -179,6 +195,11 @@
 
      <section>
       <aside>
+
+        <span class="clickMe">
+          CLICK ME ==>
+        </span>
+
         <a href="./linx/index.html">
         <button>
         Welcome INTO THE BLUE 
@@ -186,7 +207,12 @@
         <span>BLUE DISH</span>
         </p>
         </button>
-      </a>
+        </a>
+
+        <span class="clickMe">
+          <== CLICK ME
+        </span>
+
       </aside>
   </section>
   </center>
