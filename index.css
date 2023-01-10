@@ -1,0 +1,223 @@
+body,
+html {
+    background-color: rgb(0, 0, 0);
+    /* background-image: url("./tex/7.png"); */
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: test;
+    src: url(./Myriad\ Pro\ Regular.ttf);
+}
+
+.shaderContainer {
+    border: 10px ridge blue;
+    max-width: 720px;
+    max-height: 720px;
+    width: calc(100% - 30px);
+    position: relative;
+    margin: 0 auto;
+}
+
+.glslCanvas {
+    width: 100%;
+}
+
+.border2 {
+    border: 10px ridge purple;
+    width: 720px;
+    height: 720px;
+
+}
+
+.button {
+    margin: 5%;
+    /* transform: scale(.75); */
+}
+
+.hide {
+    visibility: hidden;
+
+}
+
+.webring {
+    margin: 3%;
+
+
+}
+
+.visitors {
+    color: blue;
+
+}
+
+
+.attribution {
+
+    color: #3616c4;
+    margin-left: 225px;
+    font-style: italic;
+
+
+}
+
+.attributionLink {
+
+    color: #3616c4;
+}
+
+
+a:hover {
+
+    color: #aa11aa;
+
+}
+
+.blueDish {
+    position: absolute;
+    width: 100%;
+    left: 3px;
+}
+
+.blueDishLogo {
+    position: sticky;
+    width: 200px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .5;
+    -webkit-animation: spin 120s linear infinite;
+    -moz-animation: spin 120s linear infinite;
+    animation: spin 120s linear infinite;
+}
+
+.flares {
+    position: absolute;
+    width: 90%;
+    top: -101px;
+    left: 68px;
+    -webkit-animation: fspin 30s linear infinite;
+    -moz-animation: fspin 30s linear infinite;
+    animation: fspin 30s linear infinite;
+}
+
+section {
+    position: relative;
+}
+
+.portal {
+    display: grid;
+    position: absolute;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    background-color: whitesmoke;
+    border-radius: 20%;
+    line-height: 1.5rem;
+    padding: 5px;
+    /* background-image: url(./linx/Assets/wood1.png); */
+    /* color: #e0e0ff; */
+    font-family: test;
+    font-weight: bold;
+}
+
+span.clickMe {
+    color: rgb(255, 255, 0);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-family: test;
+    letter-spacing: 2px;
+}
+
+.left {
+    justify-content: right;
+}
+
+.right {
+    justify-content: left;
+}
+
+.portal-link {
+    margin: 0 auto;
+    cursor: pointer;
+    
+}
+
+button {
+    cursor: pointer;
+    
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+@-moz-keyframes fspin {
+    100% {
+        -moz-transform: rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes fspin {
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+@keyframes fspin {
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+
+
+@-moz-keyframes shrink {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes shrink {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes shrink {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}

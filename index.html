@@ -1,237 +1,65 @@
 <!DOCTYPE html>
 <html>
-<head>    
-  <link rel="icon" href="https://raw.githubusercontent.com/The-People-s-Coalition-of-Tandy/PCoTandy/main/Assets/PCoTandyLogo.ico">
 
+<head>
+  <link rel="icon"
+    href="https://raw.githubusercontent.com/The-People-s-Coalition-of-Tandy/PCoTandy/main/Assets/PCoTandyLogo.ico">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js">
+  </script>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="./index.css">
 </head>
-<script 
-type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js">
-</script>
-
-
-
-<style media="screen">
-  body {
-    background-color: rgb(0, 0, 0);
-    /* background-image: url("./tex/7.png"); */
-  }
-
-  .shaderContainer {
-    border: 10px ridge blue;
-    width: 720px;
-    height: 720px;
-    position: relative;
-  }
-
-  .border2 {
-    border: 10px ridge purple;
-    width: 720px;
-    height: 720px;
-
-  }
-
-  .button {
-    margin: 5%;
-    /* transform: scale(.75); */
-  }
-
-  .hide {
-    visibility: hidden;
-
-  }
-
-  .webring {
-    margin: 3%;
-
-
-  }
-
-  .visitors {
-    color: blue;
-
-}
-
-
-    .attribution{
-
-      color : #3616c4;
-      margin-left: 225px;
-      font-style: italic;
-
-
-    }
-
-    .attributionLink{
-
-      color : #3616c4;
-    }
-
-
-    a:hover{
-
-      color : #aa11aa;
-
-    }
-
-    .imgContainer{
-
-    }
-
-    .blueDish{
-      position:absolute;
-      width:720px;
-      /* bottom: 135px; */
-      left: 3px;
-    }
-
-    .blueDishLogo{
-      position: sticky;
-      width:200px;
-      /* top: 250px;
-      left:250px; */
-      bottom: 0px;
-      left:0px;
-      opacity: .5;
-
-    
-    -webkit-animation:spin 120s linear infinite;
-    -moz-animation:spin 120s linear infinite;
-    animation:spin 120s linear infinite;
-    
-    }
-
-    .flares{
-      position:absolute;
-      width: 606px;
-    top: -101px;
-    left: 68px;
-      /* opacity: .5; */
-      /* mix-blend-mode: multiply; */
-
-    
-    -webkit-animation:fspin 30s linear infinite;
-    -moz-animation:fspin 30s linear infinite;
-    animation:fspin 30s linear infinite;
-    
-    }
-
-    section{
-            position:relative;
-
-    }
-
-    aside{
-      /* top: 350px; */
-      display: grid;
-      grid-template-columns: 1fr 2fr 1fr;
-      width: fit-content;
-    }
-
-    button{
-      background-color: whitesmoke;
-      border-radius: 20%;
-    }
-
-    span.clickMe{
-      color: yellow;
-    }
-
-  
-    @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-
-
-@-moz-keyframes fspin { 100% { -moz-transform: rotate(-360deg); } }
-@-webkit-keyframes fspin { 100% { -webkit-transform: rotate(-360deg); } }
-@keyframes fspin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
-
-
-@-moz-keyframes shrink { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes shrink { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes shrink { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-
-
-</style>
 
 
 <body>
-  <center>
+  <div class="shaderContainer">
+    <div>
+      <canvas class="glslCanvas" id="shader"
+        data-fragment-url="sdfBoxesTexturingBruteForce copy Light BEHIND Walls.frag"
+        data-textures="tex/1.png, tex/2.png, tex/3.png" width="720" height="720"></canvas>
 
-      <div class="shaderContainer" width="500" height="500">
-        <div class="">
-          <canvas class="glslCanvas" id="shader" data-fragment-url="sdfBoxesTexturingBruteForce copy Light BEHIND Walls.frag" 
-          data-textures="tex/1.png, tex/2.png, tex/3.png"
-          width="720"
-            height="720"></canvas>
+      <img src="tex/3.png" class="blueDish" alt="">
 
-            <img src="tex/3.png" 
-            class="blueDish"
-            alt="">
 
-            
-            <!-- <img src="tex/4.png" 
+      <!-- <img src="tex/4.png" 
             class="blueDishLogo"
             alt=""> -->
 
-           <!-- <img src="tex/5.png" 
-            class="flares"
-            alt="">  -->
+      <img src="tex/5.png" class="flares" alt="lens flare">
 
-            <img src="tex/6.png" 
-            class="flares"
-            alt="">
-            
-      
-        </div>
-      </div>
+      <img src="tex/6.png" class="flares" alt="lens flare">
 
 
+    </div>
 
-     <section>
-      <aside>
+  <section class="portal">
+    <span class="clickMe left">
+      CLICK ME <wbr>==&gt;
+    </span>
 
-        <span class="clickMe">
-          CLICK ME ==>
-        </span>
-
-        <a href="./linx/index.html">
-        <button>
-        Welcome INTO THE BLUE 
-        <p> the new album by
-        <span>BLUE DISH</span>
-        </p>
+      <a href="./linx/index.html" class="portal-link">
+        <button class="portal-button">
+          Welcome INTO THE BLUE <br>
+          the new album by
+          BLUE DISH
         </button>
-        </a>
+      </a>
 
-        <span class="clickMe">
-          <== CLICK ME
-        </span>
+      <span class="clickMe right">
+        &lt;==&nbsp;<wbr>CLICK&nbsp;ME </span>
+</section>
+  </div>
 
-      </aside>
-  </section>
-  </center>
-  <img src="tex/4.png" 
-  class="blueDishLogo"
-  alt="">
+  <footer>
+    <img src="tex/4.png" class="blueDishLogo" alt="blue dish logo">
+  </footer>
 
 
 
-  <!-- <audio preload>
-    <source src="./assets/01. Tetso Cube Light Ride Master.wav" type="audio/x-wav" /></audio> -->
-
-
-
-</body>
-
-
-
-<!-- 
+  <!-- 
 <div class="">
   <center>
     <div class="visitors" style="transform:scale(.75)">
@@ -240,8 +68,12 @@ type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/m
       <script type="text/javascript" src="//counter.websiteout.net/js/30/0/0/0"></script>
     </div>
   </center>
- -->
 
 </div>
+-->
+</body>
+
+
+
 
 </html>
