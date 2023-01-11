@@ -79,16 +79,6 @@ a:hover {
     left: 3px;
 }
 
-.blueDishLogo {
-    position: sticky;
-    width: 200px;
-    bottom: 0px;
-    left: 0px;
-    opacity: .5;
-    -webkit-animation: spin 120s linear infinite;
-    -moz-animation: spin 120s linear infinite;
-    animation: spin 120s linear infinite;
-}
 
 .flares {
     position: absolute;
@@ -155,6 +145,37 @@ button {
     
 }
 
+
+.blueDishLogo {
+    position: fixed;
+    width: 200px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .5;
+    -webkit-animation: spin 120s linear infinite;
+    -moz-animation: spin 120s linear infinite;
+    animation: spin 120s linear infinite;
+}
+
+footer{
+    width: fit-content;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .blueDishLogo {
+        position: relative;
+    }
+}
+
+
 @-moz-keyframes spin {
     100% {
         -moz-transform: rotate(360deg);
@@ -214,10 +235,4 @@ button {
     }
 }
 
-@media only screen and (max-width: 1000px) {
-    footer {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-}
+
