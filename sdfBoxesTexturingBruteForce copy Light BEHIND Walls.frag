@@ -5,16 +5,16 @@
 precision mediump float;
 #endif
 
-uniform sampler2D u_tex0; // tex/0.png
+uniform sampler2D u_tex0; 
 uniform vec2 u_tex0Resolution;
 
-uniform sampler2D u_tex1; // tex/1.png
+uniform sampler2D u_tex1; 
 uniform vec2 u_tex1Resolution;
 
-uniform sampler2D u_tex2; // tex/2.png
+uniform sampler2D u_tex2;
 uniform vec2 u_tex2Resolution;
 
-uniform sampler2D u_tex3; // tex/3.png
+uniform sampler2D u_tex3; 
 uniform vec2 u_tex3Resolution;
 
 

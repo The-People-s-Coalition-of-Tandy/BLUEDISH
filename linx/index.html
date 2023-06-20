@@ -25,13 +25,13 @@
                 Welcome to the 
                 <br>
                 <!-- <span class="release-name"><a href="https://pcotandy.org" target="_blank">People's Coalition of Tandy</a></span><br><br> -->
-                <a href="https://tandy.bandcamp.com/album/into-the-blue" target="_blank">BLUE DISH "INTO THE BLUE"</a>
+                <a href="https://tandy.bandcamp.com/album/into-the-blue" target="_blank">BLUE DISH "DEEP BLUE"</a>
                 <br>
                 Links Site!
             </p>
         </header>
-        <div class="links">
-            <a href="https://tandy.bandcamp.com/album/into-the-blue" class="link"  onmouseover="hover();" onmouseout="unhover();">
+        <div class="links" id="links_container">
+              <!-- <a href="https://tandy.bandcamp.com/album/into-the-blue" class="link"  onmouseover="hover();" onmouseout="unhover();">
                 Bandcamp
             </a>
             <a href="https://pcotandy.itch.io/into-the-blue" class="link"  onmouseover="hover();" onmouseout="unhover();">
@@ -45,7 +45,7 @@
             </a>
             <a href="https://pcotandy.org" class="link"  onmouseover="hover();" onmouseout="unhover();">
                 People's Coalition of Tandy (Label)
-            </a>
+            </a>  -->
         </div>
         <footer>
             <section>
@@ -58,6 +58,9 @@
     </main>
 </body>
 
+<script src="data.js"></script>
+<script src="make_buttons.js"></script>
+
 <script>
 function hover() {
     const speaker = document.getElementById('speaker');
@@ -69,5 +72,7 @@ function unhover() {
      speaker.setAttribute('src', './Assets/speakerSTILL.gif');
 }
 </script>
+
+
 
 </html>
