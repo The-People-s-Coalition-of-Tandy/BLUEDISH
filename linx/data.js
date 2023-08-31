@@ -1,19 +1,15 @@
 var data = [
     {
         "name" :  'Bandcamp',
-        "url" : "https://tandy.bandcamp.com/album/into-the-blue"
-    },
-    {
-        "name" :  "Blamscamp",
-        "url" : "https://pcotandy.itch.io/into-the-blue"
+        "url" : "https://tandy.bandcamp.com/album/deep-blue-pcot-0013"
     },
     {
         "name" :  "Spotify",
-        "url" : "https://open.spotify.com/album/70TpPLvfOX9fiextH1acUa?si=aA2VjjOxQteQcr3HkRua3A"
+        "url" : "https://open.spotify.com/album/01MVTvLz0y2hFDYBjALQgE?si=hloHJ0ZrRLCPc24tn-Hq_A"
     },
     {
         "name" :  'Apple Music',
-        "url" : "https://music.apple.com/us/album/into-the-blue-ep/1667128119"
+        "url" : "https://music.apple.com/us/album/deep-blue/1700903813"
     },
     {
         "name" :  "People's Coalition of Tandy (Label)",

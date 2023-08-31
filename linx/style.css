@@ -65,9 +65,9 @@ header {
 
 .link:hover {
     /* background-color: rgb(204, 114, 252); */
-    background-image: url("./Assets/wood1.png");
-    color: blue;
-    box-shadow: 0 0 1.5rem crimson;
+    background-image: url("./Assets/wood1_dark.png");
+    color: whitesmoke;
+    box-shadow: 0 0 1.5rem lightgreen;
 }
 
 .links {

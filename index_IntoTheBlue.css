@@ -1,7 +1,7 @@
 body,
 html {
     background-color: black;
-    background-image: url(./tex/bg1.png);
+    /* background-image: url(./tex/bg1.png); */
     /* background-image: url("./tex/7.png"); */
     overflow: hidden;
 }
@@ -10,7 +10,6 @@ html {
     font-family: test;
     src: url(./Myriad\ Pro\ Regular.ttf);
 }
-
 
 .shaderContainer {
     border: 10px ridge blue;
