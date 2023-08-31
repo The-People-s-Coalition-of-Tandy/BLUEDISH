@@ -1,6 +1,6 @@
 var data = [
     {
-        "name" :  'Bandcamp',
+        "name" :  'Bandcamp (CD Purchase)',
         "url" : "https://tandy.bandcamp.com/album/deep-blue-pcot-0013"
     },
     {
@@ -10,6 +10,10 @@ var data = [
     {
         "name" :  'Apple Music',
         "url" : "https://music.apple.com/us/album/deep-blue/1700903813"
+    },
+    {
+        "name" :  'BLUE DISH Streaming App',
+        "url" : "https://apps.apple.com/us/app/blue-dish-soothing-music/id6450485327?mt=12"
     },
     {
         "name" :  "People's Coalition of Tandy (Label)",
