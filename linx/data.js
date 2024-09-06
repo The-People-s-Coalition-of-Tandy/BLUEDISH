@@ -1,7 +1,15 @@
 var data = [
     {
+        "name" :  'NEW Music Video',
+        "url" : "https://www.youtube.com/watch?v=t490mC5W7XE"
+    },
+    {
         "name" :  'Bandcamp (CD Purchase)',
         "url" : "https://tandy.bandcamp.com/album/deep-blue-pcot-0013"
+    },
+    {
+        "name" :  'BLUE DISH Streaming App',
+        "url" : "https://apps.apple.com/us/app/blue-dish-soothing-music/id6450485327?mt=12"
     },
     {
         "name" :  "Spotify",
@@ -10,10 +18,6 @@ var data = [
     {
         "name" :  'Apple Music',
         "url" : "https://music.apple.com/us/album/deep-blue/1700903813"
-    },
-    {
-        "name" :  'BLUE DISH Streaming App',
-        "url" : "https://apps.apple.com/us/app/blue-dish-soothing-music/id6450485327?mt=12"
     },
     {
         "name" :  "People's Coalition of Tandy (Label)",
